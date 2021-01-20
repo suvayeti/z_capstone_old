@@ -1,0 +1,14 @@
+.testimonial-container{
+  margin:auto;
+  width:96%;
+  height:550px;
+  overflow: auto;
+  /* background:blue */
+}
+
+.testimonial-title{
+  padding:15px;
+  color: #ffffff;
+  text-align: center;
+}
+

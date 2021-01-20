@@ -1,0 +1,24 @@
+.custom-button{
+    cursor: pointer;
+    height: 40px;
+    min-width: 130px;
+    width: auto;
+    background: #18A0FB;
+    border-radius: 8px;
+    border:none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.custom-button:hover{
+    background-color:#FFFFFF;
+    color: #18A0FB;
+    border: 1px solid #18A0FB;
+}
+

@@ -1,0 +1,19 @@
+.service-container{
+    margin:auto;
+    padding:20px;
+    width: 80%;
+    /* min-height: 700px; */
+    /* background:red; */
+}
+
+.card-service-container{
+    margin:auto;
+    margin-bottom: 20px;
+    min-width:30%;
+    max-width: 30%;
+    height:400px;
+    align-items: center;
+    color: #ffffff;
+    background: #C4C4C4;
+    mix-blend-mode: multiply;
+}

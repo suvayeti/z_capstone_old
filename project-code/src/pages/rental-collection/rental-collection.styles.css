@@ -1,0 +1,12 @@
+.display-package-frame{
+    padding:30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.link-div-style{
+    padding:15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+

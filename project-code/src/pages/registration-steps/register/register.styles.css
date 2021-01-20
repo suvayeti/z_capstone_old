@@ -1,0 +1,44 @@
+.registration-container{
+    margin:auto;
+    padding:20px;
+    width: 80%;
+    /* min-height: 700px; */
+    /* background:red; */
+}
+
+.registration-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.form-container{
+    margin:auto;
+    padding:20px;
+    width: 80%;
+    color:#ffffff
+}
+.continue-btn-position{
+    margin-top:30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-top-margin{
+    margin:20px 0;
+}
+.user-login-credentials{
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border: 1px solid #ffffff;
+    background: #C4C4C4;
+    mix-blend-mode: multiply;
+}
+.credential-title-style{
+    color:#ffffff;
+    font-weight: bold;
+    padding:5px;
+}
+

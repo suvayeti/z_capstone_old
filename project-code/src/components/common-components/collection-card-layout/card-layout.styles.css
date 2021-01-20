@@ -1,0 +1,24 @@
+.card-deck-container{
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    
+    /* color: #ffffff; */
+    /* background-position: center;
+    background-size: cover;   */
+    /* background: #C4C4C4;
+    mix-blend-mode: multiply; */
+    /* background:blue */
+    
+}
+
+.img-layout{
+    margin:20px;
+    cursor: pointer;
+    width:70%;
+}
+
+
+
+
