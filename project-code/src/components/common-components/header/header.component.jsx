@@ -1,5 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import firebase from 'firebase'
+import { useDispatch } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 
 import {Navbar, Nav, Button} from 'react-bootstrap'
 
@@ -8,8 +11,18 @@ import logo from '../../../assets/logo.jpg'
 import './header.styles.css';
 
 
-const Header = ()=>(
-    
+const Header = () => {
+    let dispatch = useDispatch()
+    let history = useHistory()
+    const logout = () => {
+      firebase.auth().signOut()
+      dispatch({
+        type:"LOGOUT",
+        payload:null,
+      });
+      history.push('/login');
+    }
+
     // <div className = 'header'>
     //     <Link className = 'logo-container' to='/'>
     //         <Logo className='logo' />
@@ -25,6 +38,7 @@ const Header = ()=>(
 
     //     </div>
     // </div>
+    return(
     <div className='header-container'>
 <Navbar>
     <Navbar.Brand>
@@ -51,14 +65,18 @@ const Header = ()=>(
       <Nav.Link as = {Link} to="/account">Account</Nav.Link>
       <Nav.Link as = {Link} to="/about">About</Nav.Link>
     </Nav>
-    <Button as = {Link} to="/login">Log IN</Button>
+    
+    <Button as = {Link} to="/login">Log In</Button>
+    
+    <span>Welcome</span>
+    <Button onClick={logout}>Log Out</Button>
     {/* <CustomButton >Log In</CustomButton> */}
   </Navbar.Collapse>
   </Navbar>
   <hr />
     </div>
+    )
     
-    
-)
+  }
 
 export default Header;

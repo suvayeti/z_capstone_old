@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 import {Link} from 'react-router-dom'
 import ContentContainer from '../common-components/content-container/content-container.component';
@@ -15,10 +16,12 @@ class LogIn extends React.Component{
         
         this.state = {
             email: '',
-            password:''
+            password:'',
+            
         }
+        
     }
-    handleSubmit = event=>{
+    handleSubmit = (event)=>{
         alert("Logged In")
         event.preventDefault();
         
@@ -36,9 +39,11 @@ class LogIn extends React.Component{
         this.setState({
             [name]:value
         })
-    }
-
+    }    
     render(){
+    const goToRegister =()=>{       
+        this.props.history.push('/register')
+    }
         return(
             <div>
                 <h2 className='login-title'>LogIn</h2>
@@ -67,6 +72,7 @@ class LogIn extends React.Component{
                     <div className='btn-link-style'>
                         <p ><Link className='link'>Forgot Password?</Link></p>
                         <CustomButton type='submit'>Login</CustomButton>
+                        <CustomButton type='button' onClick={ goToRegister }>Register</CustomButton>
                     </div>
                 </form>
                 </ContentContainer>

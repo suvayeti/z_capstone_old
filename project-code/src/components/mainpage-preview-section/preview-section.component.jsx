@@ -15,6 +15,7 @@ class Preview extends React.Component{
                 imageURL:'https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80',
                 btn:"Book Tour",
                 linkURL: 'booktour'
+                // linkURL:'registration/register/register'
             },
             {
                 id:2,
